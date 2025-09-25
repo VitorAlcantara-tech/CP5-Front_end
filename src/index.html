@@ -1,20 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Melodia</title>
+    <title>Melodia: Sua música, Sua forma!</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="shortcut icon" href="/assets/logoMelodia.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
-<body>
+<style>
+    :root {
+        --font-title: "Sora", sans-serif;
+        --font-sub: "Manrope", sans-serif;
+        --font-body: "Inter", sans-serif;
+    }
+
+    .font-title {
+        font-family: var(--font-title);
+    }
+
+    .font-sub {
+        font-family: var(--font-sub);
+    }
+
+    .font-body {
+        font-family: var(--font-body);
+    }
+</style>
+
+<body class="flex flex-col gap-20">
     <section class="flex flex-col h-[60vh] justify-center gap-10">
-      <div class="flex flex-col gap-4 justify-center mx-6">
-        <h1 class="text-4xl text-center">Ouça suas músicas favoritas em um único lugar</h1>
-        <p class="text-sm text-center">Descubra milhões de músicas e playlists personalizadas em um só lugar. Ouça quando e onde quiser!</p>
-      </div>
-      <button class="bg-[#7C3AED] p-4 w-[25vh] rounded-4xl mx-auto">
-        <a class="text-2xl">Ouça agora</a>
-      </button>
+        <div class="flex flex-col gap-4 justify-center mx-6">
+            <h1 class="text-4xl text-center font-body">Ouça suas músicas favoritas em um único lugar</h1>
+            <p class="text-sm text-center">Descubra milhões de músicas e playlists personalizadas em um só lugar. Ouça
+                quando e onde quiser!</p>
+        </div>
+        <button class="bg-[#7C3AED] p-4 w-[25vh] rounded-4xl mx-auto">
+            <a class="text-2xl">Ouça agora</a>
+        </button>
     </section>
+
+
+    <!-- Funcionalidades -->
+    <section>
+        <h1 class="font-title text-center text-[30px] md:text-[40px] font-medium">Funcionalidades</h1>
+        <div class="flex flex-col md:flex-row gap-8 md:gap-25 items-center justify-center  px-8 py-14">
+            <div class="flex flex-col md:flex-row items-center md:w-1/3 justify-center">
+                <img class="w-20 h-20 mr-3 duration-300 hover:scale-[1.1] cursor-pointer" src="/assets/logoMelodia.png"
+                    alt="">
+                <div class="flex items-center mt-5">
+                    <img class="w-40 md:pl-3 md:w-90 duration-300 hover:scale-[1.05]" src="/assets/imagemSom.png"
+                        alt="">
+                    <i class="bi bi-plus-circle md:text-2xl duration-300 hover:scale-[1.03]"></i>
+                </div>
+            </div>
+
+            <div class="w-70 md:w-1/3 md:p-10 md:bg-gray-700/60 rounded-4xl">
+                <h3 class=" font-sub text-center font-medium md:text-[26px] md:text-left">Playlists:
+                    criar/editar,
+                    reordenar faixas por
+                    arrastar, capa e
+                    descrição.</h3>
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row-reverse gap-8 md:gap-22 items-center justify-center px-8 py-14">
+            <div class="flex flex-col items-center md:w-1/3 justify-center">
+                <img class="w-20 h-20 md:w-30 md:h-30 duration-300 hover:scale-[1.1] "
+                    src="/assets/bibliotecaMusica.png" alt="">
+                <div class="hidden md:flex items-center mt-5 md:mt-2 gap-8 md:gap-12">
+                    <i
+                        class="bi bi-heart text-[#5E19A8] text-md md:text-2xl duration-300 hover:scale-[1.08] hover:text-[#9027FF]"></i>
+                    <i
+                        class="bi bi-person text-[#5E19A8] text-lg md:text-2xl duration-300 hover:scale-[1.08] hover:text-[#9027FF]"></i>
+                </div>
+                <div class="md:hidden flex items-center gap-8 mt-5">
+                    <i class="bi bi-heart-fill text-[#9027FF] text-xl md:text-2xl"></i>
+                    <i class="bi bi-person-fill text-[#9027FF] text-2xl"></i>
+                </div>
+            </div>
+
+            <div class="w-70 md:w-1/3 md:p-10 md:bg-gray-700/60 rounded-4xl">
+                <h3 class="font-sub text-center font-medium md:text-[26px] md:text-left">Biblioteca: Músicas curtidas,
+                    álbuns, artistas, playlists salvas.</h3>
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-8 md:gap-22 items-center justify-center px-8 py-14">
+            <div class="flex flex-col items-center md:w-1/3 justify-center">
+                <img class="w-20 h-20 md:w-30 md:h-30 duration-300 hover:scale-[1.1] " src="/assets/foneSom.png" alt="">
+                <div class="md:mt-2">
+                    <i
+                        class="bi bi-download text-[#9027FF] md:text-[#5E19A8] text-2xl md:text-4xl duration-300 hover:scale-[1.08] hover:text-[#9027FF]"></i>
+                </div>
+            </div>
+
+            <div class="w-70 md:w-1/3 md:p-10 md:bg-gray-700/60 rounded-4xl">
+                <h3 class="font-sub text-center font-medium md:text-[26px] md:text-left">Baixar para ouvir offline (em
+                    playlists/álbuns).</h3>
+            </div>
+        </div>
+    </section>
+    <!-- FIM funcionalidades -->
+
+    <!-- O que falam de nos -->
+    <section class="bg-[#282A35] py-20 rounded-3xl">
+        <h1 class="font-title text-center text-[30px] md:text-[40px] font-medium p=5">O QUE FALAM SOBRE NÓS</h1>
+        <div class="flex flex-wrap gap-10 justify-center mt-10 px-6">
+            <div class="w-100 p-10 rounded-4xl bg-gray-200"></div>
+            <div class="w-100 p-10 rounded-4xl bg-gray-200"></div>
+            <div class="w-100 p-10 rounded-4xl bg-gray-200"></div>
+            <div class="w-100 p-10 rounded-4xl bg-gray-200"></div>
+            <div class="w-100 p-10 rounded-4xl bg-gray-200"></div>
+            <div class="w-100 p-10 rounded-4xl bg-gray-200"></div>
+        </div>
+    </section>
+    <!-- FIM O que falam de nos -->
 </body>
+
 </html>

@@ -22,7 +22,7 @@ Bootstrap Icons (CDN)
 HTML + CSS (estático, sem build)
 
 # 🚀 Deploy
-Acesse o deploy: https://appmelodia-git-main-vitoralcantara-techs-projects.vercel.app/
+Acesse o deploy: https://appmelodia.vercel.app/
 
 ## 👥 Integrantes do Grupo
 | [Vitor Alcantara](https://github.com/VitorAlcantara-tech) | [Thiago Lima](https://github.com/thiagolima-tech) |  [Matheus Vasques](https://github.com/maatvasques) | [Marco Aurélio](https://github.com/Arriatea) | [Bernardo Hanashiro](https://github.com/BernardoYuji) | 

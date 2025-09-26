@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -35,23 +35,79 @@
     }
 </style>
 
-<body class="flex flex-col gap-20">
-    <section class="flex flex-col h-[60vh] justify-center gap-10">
-        <div class="flex flex-col gap-4 justify-center mx-6">
-            <h1 class="text-4xl text-center font-body">Ouça suas músicas favoritas em um único lugar</h1>
-            <p class="text-sm text-center">Descubra milhões de músicas e playlists personalizadas em um só lugar. Ouça
-                quando e onde quiser!</p>
+<body>
+    <!-- Início -->
+    <section class="flex flex-col py-35 md:py-50 justify-center gap-10">
+        <div class="flex flex-col gap-4 justify-center px-8 lg:px-16">
+            <h1 class="text-4xl md:text-5xl text-center font-title font-semibold">Ouça suas músicas favoritas em um
+                único lugar<span class="text-[#9027FF]  md:text-6xl font-body">.</span></h1>
+            <p class="text-md md:text-lg text-center font-sub font-medium mx-auto">Da descoberta ao play: encontre novos
+                sons, organize suas playlists, acompanhe letras em tempo real e ouça offline em um design imersivo que
+                coloca a música em primeiro lugar.</p>
         </div>
-        <button class="bg-[#7C3AED] p-4 w-[25vh] rounded-4xl mx-auto">
-            <a class="text-2xl">Ouça agora</a>
-        </button>
+        <div class="mx-auto">
+            <button type="button" class="w-70 flex items-center justify-center gap-2
+               rounded-[2rem] px-6 py-3 text-white text-xl font-sub
+               bg-gradient-to-r from-[#FF4D9D] to-[#7C3AED]
+               shadow-lg shadow-black/20
+               hover:scale-[1.02] hover:shadow-black/30
+               active:scale-95
+               transition font-medium cursor-pointer">
+                <i class="bi bi-play-fill text-2xl"></i>
+                Ouça agora
+            </button>
+        </div>
     </section>
+    <!-- FIM Início -->
 
+    <!-- Demonstracao -->
+    <section class="pb-20">
+        <h1 class="text-4xl md:text-5xl text-center font-title font-semibold">Demonstração Mobile</h1>
+        
+        <div class="flex flex-col lg:flex-row items-center justify-center gap-20 my-10">
+            <img class="w-80 md:w-100 rounded-4xl" src="/assets/demonstracaoApp.png" alt="">
+            <img class="w-80 md:w-150 rounded-4xl" src="/assets/demonstracaoTablet.png" alt="">
+        </div>
+    </section>
+    <!-- FIM Demonstracao -->
+
+    <!-- Benefícios -->
+    <section>
+        <h1 class="font-title text-center text-[30px] md:text-[50px] font-medium">Benefícios</h1>
+        <div class="w-60 rounded-full h-0.5 mt-2 md:w-80 lg:w-120 md:h-1 bg-[#9027FF] mx-auto"></div>
+
+        <div class="flex flex-wrap gap-8 justify-around py-12 px-10">
+            <div
+                class="px-10 py-12 bg-gray-700/60 w-80 flex flex-col items-center text-center rounded-3xl gap-3 duration-300 hover:scale-[1.06]">
+                <i class="bi bi-cast text-[#9027FF] lg:text-white text-9xl mb-3 duration-300 hover:text-[#9027FF]"></i>
+                <h3 class="font-sub font-semibold text-xl">Visual imersivo</h3>
+                <p class="font-body text-md">Tema dark por padrão, cores Melodia, foco na capa e na experiência.</p>
+            </div>
+            <div
+                class="px-10 py-12 bg-gray-700/60 w-80 flex flex-col items-center text-center rounded-3xl gap-3 duration-300 hover:scale-[1.06]">
+                <i
+                    class="bi bi-hdd-network text-[#9027FF] lg:text-white text-9xl mb-3 duration-300 hover:text-[#9027FF]"></i>
+                <h3 class="font-sub font-semibold text-xl">Multi-dispositivo</h3>
+                <p class="font-body text-md">Continue de onde parou; AirPlay/Chromecast prontos.</p>
+            </div>
+            <div
+                class="px-10 py-12 bg-gray-700/60 w-80 flex flex-col items-center text-center rounded-3xl gap-3 duration-300 hover:scale-[1.06] ">
+                <i
+                    class="bi bi-marker-tip text-[#9027FF] lg:text-white text-9xl mb-3 duration-300 hover:text-[#9027FF]"></i>
+                <h3 class="font-sub font-semibold text-xl">Personalização real</h3>
+                <p class="font-body text-md">Recomendações que entendem seu humor/atividade (foco, treino, relax,
+                    festa).</p>
+            </div>
+        </div>
+    </section>
+    <!-- FIM Benefícios -->
 
     <!-- Funcionalidades -->
-    <section>
-        <h1 class="font-title text-center text-[30px] md:text-[40px] font-medium">Funcionalidades</h1>
-        <div class="flex flex-col md:flex-row gap-8 md:gap-25 items-center justify-center  px-8 py-14">
+    <section id="funcionalidades" class="py-18">
+        <h1 class="font-title text-center text-[30px] md:text-[50px] font-medium">Funcionalidades</h1>
+        <div class="w-70 rounded-full h-0.5 mt-2 md:w-80 lg:w-120 md:h-1 bg-[#9027FF] mx-auto"></div>
+
+        <div class="flex flex-col md:flex-row gap-8 md:gap-25 items-center justify-center px-8 py-14 ">
             <div class="flex flex-col md:flex-row items-center md:w-1/3 justify-center">
                 <img class="w-20 h-20 mr-3 duration-300 hover:scale-[1.1] cursor-pointer" src="/assets/logoMelodia.png"
                     alt="">
@@ -62,8 +118,10 @@
                 </div>
             </div>
 
-            <div class="w-70 md:w-1/3 md:p-10 md:bg-gray-700/60 rounded-4xl">
-                <h3 class=" font-sub text-center font-medium md:text-[26px] md:text-left">Playlists:
+            <div
+                class="w-70 md:w-1/3 md:p-10 md:bg-gray-700/60 rounded-4xl duration-300 hover:scale-[1.03] cursor-default">
+                <h3 class=" font-sub text-center font-medium md:text-[26px] md:text-left"><span
+                        class="duration-300 hover:text-[#9027FF]">Playlists:</span>
                     criar/editar,
                     reordenar faixas por
                     arrastar, capa e
@@ -82,18 +140,20 @@
                         class="bi bi-person text-[#5E19A8] text-lg md:text-2xl duration-300 hover:scale-[1.08] hover:text-[#9027FF]"></i>
                 </div>
                 <div class="md:hidden flex items-center gap-8 mt-5">
-                    <i class="bi bi-heart-fill text-[#9027FF] text-xl md:text-2xl"></i>
-                    <i class="bi bi-person-fill text-[#9027FF] text-2xl"></i>
+                    <i class="bi bi-heart-fill text-[#7719DD] text-xl md:text-2xl"></i>
+                    <i class="bi bi-person-fill text-[#7719DD] text-2xl"></i>
                 </div>
             </div>
 
-            <div class="w-70 md:w-1/3 md:p-10 md:bg-gray-700/60 rounded-4xl">
-                <h3 class="font-sub text-center font-medium md:text-[26px] md:text-left">Biblioteca: Músicas curtidas,
+            <div
+                class="w-70 md:w-1/3 md:p-10 md:bg-gray-700/60 rounded-4xl duration-300 hover:scale-[1.03] cursor-default">
+                <h3 class="font-sub text-center font-medium md:text-[26px] md:text-left"><span
+                        class="duration-300 hover:text-[#9027FF]">Bibliotecas:</span> Músicas curtidas,
                     álbuns, artistas, playlists salvas.</h3>
             </div>
         </div>
 
-        <div class="flex flex-col md:flex-row gap-8 md:gap-22 items-center justify-center px-8 py-14">
+        <div class="flex flex-col md:flex-row gap-8 md:gap-22 items-center justify-center px-8">
             <div class="flex flex-col items-center md:w-1/3 justify-center">
                 <img class="w-20 h-20 md:w-30 md:h-30 duration-300 hover:scale-[1.1] " src="/assets/foneSom.png" alt="">
                 <div class="md:mt-2">
@@ -102,7 +162,8 @@
                 </div>
             </div>
 
-            <div class="w-70 md:w-1/3 md:p-10 md:bg-gray-700/60 rounded-4xl">
+            <div
+                class="w-70 md:w-1/3 md:p-10 md:bg-gray-700/60 rounded-4xl duration-300 hover:scale-[1.03] cursor-default">
                 <h3 class="font-sub text-center font-medium md:text-[26px] md:text-left">Baixar para ouvir offline (em
                     playlists/álbuns).</h3>
             </div>
@@ -111,18 +172,267 @@
     <!-- FIM funcionalidades -->
 
     <!-- O que falam de nos -->
-    <section class="bg-[#282A35] py-20 rounded-3xl">
-        <h1 class="font-title text-center text-[30px] md:text-[40px] font-medium p=5">O QUE FALAM SOBRE NÓS</h1>
+    <section class="bg-[#1A1C27] py-20 rounded-3xl" id="feedback">
+        <h1 class="font-title text-center text-[30px] md:text-[40px] font-medium px-10">Nossos Feedbacks<span
+                class="text-[#9027FF]"> !</span></h1>
         <div class="flex flex-wrap gap-10 justify-center mt-10 px-6">
-            <div class="w-100 p-10 rounded-4xl bg-gray-200"></div>
-            <div class="w-100 p-10 rounded-4xl bg-gray-200"></div>
-            <div class="w-100 p-10 rounded-4xl bg-gray-200"></div>
-            <div class="w-100 p-10 rounded-4xl bg-gray-200"></div>
-            <div class="w-100 p-10 rounded-4xl bg-gray-200"></div>
-            <div class="w-100 p-10 rounded-4xl bg-gray-200"></div>
+            <div
+                class="w-100 py-10 px-7 rounded-xl bg-[#191621] flex gap-5 items-center duration-300 hover:scale-[1.08]">
+                <img class="w-30 h-30 duration-300 hover:scale-[1.08] cursor-pointer" src="/assets/person1.png" alt="">
+                <div class="flex flex-col gap-2">
+                    <h2 class="font-sub font-semibold">Juliano Ferreira</h2>
+                    <div class="flex gap-1.5">
+                        <i class="bi bi-star-fill text-[#7B00FF] duration-300 hover:scale-[1.2]"></i>
+                        <i class="bi bi-star-fill text-[#7B00FF] duration-300 hover:scale-[1.2]"></i>
+                        <i class="bi bi-star-fill text-[#7B00FF] duration-300 hover:scale-[1.2]"></i>
+                        <i class="bi bi-star-fill text-[#7B00FF] duration-300 hover:scale-[1.2]"></i>
+                    </div>
+                    <p class="font-body text-sm">"Gostei bastante da organização e desing do app!"</p>
+                </div>
+            </div>
+            <div
+                class="w-100 py-10 px-7 rounded-xl bg-[#191621] flex gap-5 items-center duration-300 hover:scale-[1.08]">
+                <img class="w-30 h-30 duration-300 hover:scale-[1.08] cursor-pointer" src="/assets/person2.png" alt="">
+                <div class="flex flex-col gap-2">
+                    <h2 class="font-sub font-semibold">Giovanna Santos</h2>
+                    <div class="flex gap-1.5">
+                        <i class="bi bi-star-fill text-[#7B00FF] duration-300 hover:scale-[1.2]"></i>
+                        <i class="bi bi-star-fill text-[#7B00FF] duration-300 hover:scale-[1.2]"></i>
+                        <i class="bi bi-star-fill text-[#7B00FF] duration-300 hover:scale-[1.2]"></i>
+                        <i class="bi bi-star-fill text-[#7B00FF] duration-300 hover:scale-[1.2]"></i>
+                        <i class="bi bi-star-fill text-[#7B00FF] duration-300 hover:scale-[1.2]"></i>
+                    </div>
+                    <p class="font-body text-sm">"Adorei o app, gostei bastante das cores e da interface de fácil
+                        navegação!"</p>
+                </div>
+            </div>
+            <div
+                class="w-100 py-10 px-7 rounded-xl bg-[#191621] flex gap-5 items-center duration-300 hover:scale-[1.08]">
+                <img class="w-30 h-30 duration-300 hover:scale-[1.08] cursor-pointer" src="/assets/person3.png" alt="">
+                <div class="flex flex-col gap-2">
+                    <h2 class="font-sub font-semibold">João Victor Salles</h2>
+                    <div class="flex gap-1.5">
+                        <i class="bi bi-star-fill text-[#7B00FF] duration-300 hover:scale-[1.2]"></i>
+                        <i class="bi bi-star-fill text-[#7B00FF] duration-300 hover:scale-[1.2]"></i>
+                        <i class="bi bi-star-fill text-[#7B00FF] duration-300 hover:scale-[1.2]"></i>
+                    </div>
+                    <p class="font-body text-sm">"Muito bom a qualidade do som e das músicas."</p>
+                </div>
+            </div>
+            <div
+                class="w-100 py-10 px-7 rounded-xl bg-[#191621] flex gap-5 items-center duration-300 hover:scale-[1.08]">
+                <img class="w-30 h-30 duration-300 hover:scale-[1.08] cursor-pointer" src="/assets/person4.png" alt="">
+                <div class="flex flex-col gap-2">
+                    <h2 class="font-sub font-semibold">Thay Medeiros</h2>
+                    <div class="flex gap-1.5">
+                        <i class="bi bi-star-fill text-[#7B00FF] duration-300 hover:scale-[1.2]"></i>
+                        <i class="bi bi-star-fill text-[#7B00FF] duration-300 hover:scale-[1.2]"></i>
+                        <i class="bi bi-star-fill text-[#7B00FF] duration-300 hover:scale-[1.2]"></i>
+                        <i class="bi bi-star-fill text-[#7B00FF] duration-300 hover:scale-[1.2]"></i>
+                        <i class="bi bi-star-fill text-[#7B00FF]"></i>
+                    </div>
+                    <p class="font-body text-sm">"Amei a forma fácil de montar minhas playlists e de personaliza-lás do
+                        jeito que eu gosto!"</p>
+                </div>
+            </div>
+            <div
+                class="w-100 py-10 px-7 rounded-xl bg-[#191621] flex gap-5 items-center duration-300 hover:scale-[1.08]">
+                <img class="w-30 h-30 duration-300 hover:scale-[1.08] cursor-pointer" src="/assets/person5.png" alt="">
+                <div class="flex flex-col gap-2">
+                    <h2 class="font-sub font-semibold">Jacinto Costa</h2>
+                    <div class="flex gap-1.5">
+                        <i class="bi bi-star-fill text-[#7B00FF] duration-300 hover:scale-[1.2]"></i>
+                        <i class="bi bi-star-fill text-[#7B00FF] duration-300 hover:scale-[1.2]"></i>
+                        <i class="bi bi-star-fill text-[#7B00FF] duration-300 hover:scale-[1.2]"></i>
+                    </div>
+                    <p class="font-body text-sm">"Bom app, indico a todos"</p>
+                </div>
+            </div>
+            <div
+                class="w-100 py-10 px-7 rounded-xl bg-[#191621] flex gap-5 items-center duration-300 hover:scale-[1.08]">
+                <img class="w-30 h-30 duration-300 hover:scale-[1.08] cursor-pointer" src="/assets/person6.png" alt="">
+                <div class="flex flex-col gap-2">
+                    <h2 class="font-sub font-semibold">Cleber Soares</h2>
+                    <div class="flex gap-1.5">
+                        <i class="bi bi-star-fill text-[#7B00FF] duration-300 hover:scale-[1.08]"></i>
+                        <i class="bi bi-star-fill text-[#7B00FF] duration-300 hover:scale-[1.08]"></i>
+                        <i class="bi bi-star-fill text-[#7B00FF] duration-300 hover:scale-[1.08]"></i>
+                        <i class="bi bi-star-fill text-[#7B00FF] duration-300 hover:scale-[1.08]"></i>
+                    </div>
+                    <p class="font-body text-sm">"Achei muito legal a opção de baixar as músicas offline, me ajudou
+                        bastante!>
+                </div>
+            </div>
         </div>
     </section>
     <!-- FIM O que falam de nos -->
+
+    <!-- Formulário de contato -->
+    <section class="bg-[#1A1C27] py-20 my-20 rounded-3xl mx-6 md:mx-30" id="contato">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="font-title text-center text-[30px] md:text-[40px] font-semibold">
+                <span class="text-[#9027FF]">
+                    Fale com a gente
+                </span>
+            </h2>
+            <p class="font-sub text-center text-gray-300 mt-2">
+                Dúvidas, feedback ou parcerias — respondemos rapidinho.
+            </p>
+
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <form id="contact-form" class="rounded-3xl border border-[#2A2F3A] bg-[#161821] p-6 md:p-8">
+                    <div class="grid grid-cols-1 gap-5">
+                        <div>
+                            <label for="nome" class="block font-sub text-sm text-gray-200 mb-2">Nome</label>
+                            <input id="nome" name="nome" type="text" required class="w-full rounded-xl border border-[#2A2F3A] bg-[#0E0F13] px-4 py-3 text-gray-100 placeholder-gray-500
+                     outline-none focus:ring-2 focus:ring-[#7C3AED]/40 focus:border-[#7C3AED]/60"
+                                placeholder="Seu nome completo" />
+                        </div>
+
+                        <div>
+                            <label for="email" class="block font-sub text-sm text-gray-200 mb-2">E-mail</label>
+                            <input id="email" name="email" type="email" required class="w-full rounded-xl border border-[#2A2F3A] bg-[#0E0F13] px-4 py-3 text-gray-100 placeholder-gray-500
+                     outline-none focus:ring-2 focus:ring-[#7C3AED]/40 focus:border-[#7C3AED]/60"
+                                placeholder="voce@exemplo.com" />
+                        </div>
+
+                        <div>
+                            <label for="assunto" class="block font-sub text-sm text-gray-200 mb-2">Assunto</label>
+                            <input id="assunto" name="assunto" required class="w-full rounded-xl border border-[#2A2F3A] bg-[#0E0F13] px-4 py-3 text-gray-100
+                     outline-none focus:ring-2 focus:ring-[#7C3AED]/40 focus:border-[#7C3AED]/60"
+                                placeholder="Suporte, Feedback, Parcerias...">
+                            </input>
+                        </div>
+
+                        <div>
+                            <label for="mensagem" class="block font-sub text-sm text-gray-200 mb-2">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" required class="w-full rounded-xl border border-[#2A2F3A] bg-[#0E0F13] px-4 py-3 text-gray-100 placeholder-gray-500
+                     outline-none focus:ring-2 focus:ring-[#7C3AED]/40 focus:border-[#7C3AED]/60"
+                                placeholder="Como podemos ajudar?"></textarea>
+                        </div>
+
+                        <button type="submit" class="mt-2 inline-flex items-center justify-center gap-2 rounded-3xl px-6 py-3
+                   font-sub text-lg text-white
+                   bg-gradient-to-r from-[#B722C2] to-[#7C3AED]
+                   shadow-lg shadow-black/20 transition
+                   hover:scale-[1.02] active:scale-[0.99]">
+                            <i class="bi bi-send"></i> Enviar
+                        </button>
+                    </div>
+                </form>
+
+                <div
+                    class="rounded-3xl border border-[#2A2F3A] bg-[#161821] p-6 md:p-8 text-gray-100 flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-title text-2xl">Canais</h3>
+                        <p class="font-body text-gray-300 mt-2">Fale com a equipe Melodia por e-mail ou redes sociais.
+                        </p>
+
+                        <ul class="mt-6 space-y-3 font-body">
+                            <li class="flex items-center gap-3">
+                                <i class="bi bi-envelope-fill text-[#7C3AED]"></i>
+                                <a href="mailto:suporte@melodia.app" class="hover:underline">suporte@melodia.app</a>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="bi bi-discord text-[#7C3AED]"></i>
+                                <span>/melodiaapp</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="bi bi-instagram text-[#7C3AED]"></i>
+                                <span>@melodia.app</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FIM Formulário de contato -->
+
+    <!-- Footer -->
+    <footer class="bg-[#0E0F13] pt-16 pb-8 mt-20">
+
+        <div class="h-[3px] bg-gradient-to-r from-[#FF4D9D] to-[#7C3AED] mb-10"></div>
+
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 text-gray-200">
+                <!-- Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <img src="/assets/logoMelodia.png" alt="Melodia" class="w-10 h-10">
+                        <span class="font-title text-xl">Melodia</span>
+                    </div>
+                    <p class="font-body text-gray-400">
+                        Sua música, sua forma. Descubra playlists, artistas e sons que combinam com o seu momento.
+                    </p>
+                </div>
+
+                <!-- Navegação -->
+                <div>
+                    <h4 class="font-title text-lg mb-3">Navegação</h4>
+                    <ul class="space-y-2 font-body text-gray-300">
+                        <li><a href="#" class="hover:text-white">Início</a></li>
+                        <li><a href="#funcionalidades" class="hover:text-white">Funcionalidades</a></li>
+                        <li><a href="#feedback" class="hover:text-white">Feedbacks</a></li>
+                        <li><a href="#contato" class="hover:text-white">Contato</a></li>
+                    </ul>
+                </div>
+
+
+                <div>
+                    <h4 class="font-title text-lg mb-3">Suporte</h4>
+                    <ul class="space-y-2 font-body text-gray-300">
+                        <li><a href="#" class="hover:text-white">Central de ajuda</a></li>
+                        <li><a href="#" class="hover:text-white">Status do sistema</a></li>
+                        <li><a href="#" class="hover:text-white">Contato</a></li>
+                    </ul>
+
+                    <h4 class="font-title text-lg mt-6 mb-3">Legal</h4>
+                    <ul class="space-y-2 font-body text-gray-300">
+                        <li><a href="#" class="hover:text-white">Termos de uso</a></li>
+                        <li><a href="#" class="hover:text-white">Privacidade</a></li>
+                        <li><a href="#" class="hover:text-white">Cookies</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="space-y-4">
+                    <h4 class="font-title text-lg">Fique por dentro</h4>
+                    <p class="font-body text-gray-400">Receba novidades, lançamentos e playlists exclusivas.</p>
+
+                    <form id="newsletter-form" class="flex gap-2">
+                        <input type="email" required placeholder="seu@email.com" class="w-full rounded-xl border border-[#2A2F3A] bg-[#161821] px-4 py-3 text-gray-100 placeholder-gray-500
+                        outline-none focus:ring-2 focus:ring-[#7C3AED]/40 focus:border-[#7C3AED]/60">
+                        <button type="submit" class="rounded-xl px-4 py-3 font-sub text-white
+                         bg-gradient-to-r from-[#FF4D9D] to-[#7C3AED] hover:scale-[1.02] active:scale-95 transition">
+                            Inscrever
+                        </button>
+                    </form>
+
+                    <div id="newsletter-toast" class="hidden font-body text-sm text-[#22C55E]">Inscrição confirmada! 🎉
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Linha inferior -->
+            <div
+                class="mt-10 pt-6 border-t border-[#2A2F3A] flex flex-col md:flex-row items-center justify-between gap-4">
+                <p class="font-body text-gray-400 text-sm">© 2025 Melodia. Todos os direitos reservados.</p>
+
+                <div class="flex items-center gap-4 text-gray-300">
+                    <a href="#" class="hover:text-white"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="hover:text-white"><i class="bi bi-discord"></i></a>
+                    <a href="#" class="hover:text-white"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="hover:text-white"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
 </body>
 
 </html>

@@ -37,31 +37,42 @@
 
 <body>
     <!-- Início -->
-    <section class="flex flex-col py-35 md:py-50 justify-center gap-10">
-        <div class="flex flex-col gap-4 justify-center px-8 lg:px-16">
-            <h1 class="text-4xl md:text-5xl text-center font-title font-semibold">Ouça suas músicas favoritas em um
-                único lugar<span class="text-[#9027FF]  md:text-6xl font-body">.</span></h1>
-            <p class="text-md md:text-lg text-center font-sub font-medium mx-auto">Da descoberta ao play: encontre novos
-                sons, organize suas playlists, acompanhe letras em tempo real e ouça offline em um design imersivo que
-                coloca a música em primeiro lugar.</p>
-        </div>
-        <div class="mx-auto">
-            <button type="button" class="w-70 flex items-center justify-center gap-2
-               rounded-[2rem] px-6 py-3 text-white text-xl font-sub
-               bg-gradient-to-r from-[#FF4D9D] to-[#7C3AED]
-               shadow-lg shadow-black/20
-               hover:scale-[1.02] hover:shadow-black/30
-               active:scale-95
-               transition font-medium cursor-pointer">
-                <i class="bi bi-play-fill text-2xl"></i>
-                Ouça agora
-            </button>
-        </div>
-    </section>
+<section class="relative md:h-[75vh] flex flex-col py-35 md:py-50 justify-center gap-10 bg-no-repeat bg-center bg-cover" 
+         style="background-image: url('./assets/78075456-fc59-40f3-905b-3410d64ac90e.png');">
+
+  <!-- overlay ocupa toda a section -->
+  <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
+
+  <!-- conteúdo sempre por cima -->
+  <div class="relative flex flex-col gap-4 justify-center px-8 lg:px-16 z-10">
+      <h1 class="text-4xl md:text-5xl text-center font-title font-semibold">
+          Ouça suas músicas favoritas em um único lugar
+          <span class="text-[#9027FF] md:text-6xl font-body">.</span>
+      </h1>
+      <p class="text-md md:text-lg text-center font-sub font-medium mx-auto max-w-3xl">
+          Da descoberta ao play: encontre novos sons, organize suas playlists, acompanhe letras em tempo real e ouça offline em um design imersivo que coloca a música em primeiro lugar.
+      </p>
+  </div>
+
+  <div class="relative mx-auto z-10">
+      <button type="button" 
+              class="w-70 flex items-center justify-center gap-2
+                     rounded-[2rem] px-6 py-3 text-white text-xl font-sub
+                     bg-gradient-to-r from-[#FF4D9D] to-[#7C3AED]
+                     shadow-lg shadow-black/20
+                     hover:scale-[1.02] hover:shadow-black/30
+                     active:scale-95
+                     transition font-medium cursor-pointer">
+          <i class="bi bi-play-fill text-2xl"></i>
+          Ouça agora
+      </button>
+  </div>
+</section>
+
     <!-- FIM Início -->
 
     <!-- Demonstracao -->
-    <section class="pb-20">
+    <section class="pb-20 mt-20">
         <h1 class="text-4xl md:text-5xl text-center font-title font-semibold">Demonstração Mobile</h1>
         
         <div class="flex flex-col lg:flex-row items-center justify-center gap-20 my-10">

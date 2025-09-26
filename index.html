@@ -35,39 +35,78 @@
     }
 </style>
 
-<body>
+<body class="bg-[#0E0F13] text-gray-200">
+
+    <!-- HEADER -->
+    <header id="site-header"
+        class="fixed top-0 left-0 w-full z-50 -translate-y-full transition-transform duration-300">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex items-center justify-between h-16">
+                <!-- Brand -->
+                <a href="#" class="flex items-center gap-3">
+                    <img src="/assets/logoMelodia.png" alt="Melodia" class="w-9 h-9">
+                    <span class="font-title text-lg text-white">Melodia</span>
+                </a>
+
+                <!-- Menu desktop -->
+                <nav class="hidden md:flex items-center gap-6 font-body text-gray-200">
+                    <a href="#" class="hover:text-white">Início</a>
+                    <a href="#funcionalidades" class="hover:text-white">Funcionalidades</a>
+                    <a href="#feedback" class="hover:text-white">Feedbacks</a>
+                    <a href="#contato" class="hover:text-white">Contato</a>
+                    <button
+                        class="ml-4 rounded-full px-4 py-2 bg-gradient-to-r from-[#FF4D9D] to-[#7C3AED] text-white font-sub shadow-sm">Experimente</button>
+                </nav>
+
+                <!-- Botão mobile -->
+                <button id="mobile-toggle" aria-expanded="false"
+                    class="md:hidden inline-flex items-center justify-center p-2 rounded-lg text-gray-200">
+                    <i class="bi bi-list text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu"
+            class="md:hidden fixed inset-x-4 top-16 z-40 rounded-xl border border-[#2A2F3A] bg-[#0E0F13]/80 backdrop-blur-sm p-4 transform transition-transform duration-300 -translate-y-2 scale-95 opacity-0 pointer-events-none">
+            <nav class="flex flex-col gap-3 font-body text-gray-200">
+                <a href="#" class="py-2 px-3 rounded hover:bg-white/5">Início</a>
+                <a href="#funcionalidades" class="py-2 px-3 rounded hover:bg-white/5">Funcionalidades</a>
+                <a href="#feedback" class="py-2 px-3 rounded hover:bg-white/5">Feedbacks</a>
+                <a href="#contato" class="py-2 px-3 rounded hover:bg-white/5">Contato</a>
+                <button
+                    class="mt-3 rounded-full px-4 py-2 bg-gradient-to-r from-[#FF4D9D] to-[#7C3AED] text-white font-sub">Experimente</button>
+            </nav>
+        </div>
+    </header>
+
     <!-- Início -->
-<section class="relative md:h-[75vh] flex flex-col py-35 md:py-50 justify-center gap-10 bg-no-repeat bg-center bg-cover" 
-         style="background-image: url('./assets/78075456-fc59-40f3-905b-3410d64ac90e.png');">
+    <section id="section-hero" class="relative md:h-[75vh] flex flex-col py-35 md:py-50 justify-center gap-10 bg-no-repeat bg-center bg-cover"
+        style="background-image: url('./assets/78075456-fc59-40f3-905b-3410d64ac90e.png');">
 
-  <!-- overlay ocupa toda a section -->
-  <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
+        <!-- overlay ocupa toda a section -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
 
-  <!-- conteúdo sempre por cima -->
-  <div class="relative flex flex-col gap-4 justify-center px-8 lg:px-16 z-10">
-      <h1 class="text-4xl md:text-5xl text-center font-title font-semibold">
-          Ouça suas músicas favoritas em um único lugar
-          <span class="text-[#9027FF] md:text-6xl font-body">.</span>
-      </h1>
-      <p class="text-md md:text-lg text-center font-sub font-medium mx-auto max-w-3xl">
-          Da descoberta ao play: encontre novos sons, organize suas playlists, acompanhe letras em tempo real e ouça offline em um design imersivo que coloca a música em primeiro lugar.
-      </p>
-  </div>
+        <!-- conteúdo sempre por cima -->
+        <div class="relative flex flex-col gap-4 justify-center px-8 lg:px-16 z-10">
+            <h1 class="text-4xl md:text-5xl text-center font-title font-semibold">
+                Ouça suas músicas favoritas em um único lugar
+                <span class="text-[#9027FF] md:text-6xl font-body">.</span>
+            </h1>
+            <p class="text-md md:text-lg text-center font-sub font-medium mx-auto max-w-3xl">
+                Da descoberta ao play: encontre novos sons, organize suas playlists, acompanhe letras em tempo
+                real e ouça offline em um design imersivo que coloca a música em primeiro lugar.
+            </p>
+        </div>
 
-  <div class="relative mx-auto z-10">
-      <button type="button" 
-              class="w-70 flex items-center justify-center gap-2
-                     rounded-[2rem] px-6 py-3 text-white text-xl font-sub
-                     bg-gradient-to-r from-[#FF4D9D] to-[#7C3AED]
-                     shadow-lg shadow-black/20
-                     hover:scale-[1.02] hover:shadow-black/30
-                     active:scale-95
-                     transition font-medium cursor-pointer">
-          <i class="bi bi-play-fill text-2xl"></i>
-          Ouça agora
-      </button>
-  </div>
-</section>
+        <div class="relative mx-auto z-10">
+            <button type="button"
+                class="w-70 flex items-center justify-center gap-2 rounded-[2rem] px-6 py-3 text-white text-xl font-sub bg-gradient-to-r from-[#FF4D9D] to-[#7C3AED] shadow-lg shadow-black/20 hover:scale-[1.02] hover:shadow-black/30 active:scale-95 transition font-medium cursor-pointer">
+                <i class="bi bi-play-fill text-2xl"></i>
+                Ouça agora
+            </button>
+        </div>
+    </section>
 
     <!-- FIM Início -->
 
@@ -443,7 +482,37 @@
 
 
     </footer>
+<script>
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const header = document.getElementById('site-header');
+        const hero = document.getElementById('section-hero');
 
+        // Mobile menu toggle
+        mobileToggle.addEventListener('click', () => {
+            const isOpen = mobileMenu.classList.contains('opacity-100');
+            if (isOpen) {
+                mobileMenu.classList.remove('opacity-100', 'translate-y-0', 'scale-100', 'pointer-events-auto');
+                mobileMenu.classList.add('-translate-y-2', 'scale-95', 'opacity-0', 'pointer-events-none');
+            } else {
+                mobileMenu.classList.add('opacity-100', 'translate-y-0', 'scale-100', 'pointer-events-auto');
+                mobileMenu.classList.remove('-translate-y-2', 'scale-95', 'opacity-0', 'pointer-events-none');
+            }
+        });
+
+        // Mostrar header após hero
+        window.addEventListener('scroll', () => {
+            const heroHeight = hero.offsetHeight;
+
+            if (window.scrollY >= heroHeight) {
+                header.classList.remove('-translate-y-full');
+                header.classList.add('translate-y-0', 'bg-[#0E0F13]/90', 'backdrop-blur-md', 'shadow-md');
+            } else {
+                header.classList.add('-translate-y-full');
+                header.classList.remove('translate-y-0', 'bg-[#0E0F13]/90', 'backdrop-blur-md', 'shadow-md');
+            }
+        });
+    </script>
 </body>
 
 </html>
